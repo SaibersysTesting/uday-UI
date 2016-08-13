@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<html>
+		<meta charset="utf-8">
+	<head>
+	</head>
+	<body>
+	<input type="button" value="display sum" onclick="getsum()">
+	<p id="p1"></p>
+	
+	<input type="button" value="display mul" onclick="getmul()">
+	<p id="p2"></p>
+	
+	<input type="button" value="display div" onclick="getdiv()">
+	<p id="p3"></p>
+	
+	<input type="button" value="display mod" onclick="getmod()">
+	<p id="p4"></p>
+	
+	<input type="button" value="display sub" onclick="getsub()">
+	<p id="p5"></p>
+	
+	<script>
+		var a = 4;
+		var b = 5;
+		
+		function getsum(){
+		var c = a+b;
+		document.getElementById("p1").innerHTML = "The sum is : "  +c;
+		}
+		
+		function getmul(){
+		var c = a*b;
+		document.getElementById("p2").innerHTML = "The mul is : " +c;
+		}
+		
+		function getdiv(){
+		var c = a/b;
+		document.getElementById("p3").innerHTML = "The div is : " +c;
+		}
+		
+		function getdiv(){
+		var c = a%b;
+		document.getElementById("p4").innerHTML = "The mod is : " +c;
+		}
+		
+		function getsub(){
+		var c = a-b;
+		document.getElementById("p5").innerHTML = "The sub is : " +c;
+		}
+	</script>
+	</body>
+</html>
