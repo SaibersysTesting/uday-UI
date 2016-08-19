@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+	<html>
+		<meta charset="utf-8">
+	<head>
+	</head>
+	<body>
+	<input type="text" id="text1">
+	<input type="text" id="text2">
+	<p id="p1"></p>
+	<input type="button" value="display sum" onclick="getsum()">
+	
+	<script>
+	function getsum(){
+
+		var x=parseInt(document.getElementById("text1").value);
+		var y=parseInt(document.getElementById("text2").value);
+		var z=x+y;
+		document.getElementById("p1").innerHTML=z;
+		//var myname="uday";
+		//var flag = true;		
+		//if(flag == true){
+		//alert("hiii");
+		//}
+		//else{
+		//document.getElementById("p1").innerHTML = "if it is false";
+		//}
+		//var myvalue = 10.8;
+		//document.getElementById("p1").innerHTML = myvalue;
+		}
+	</script>
+	</body>
+</html>

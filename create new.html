@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="jquery.min.js"></script>
+	</head>
+	<body>
+		<input type="text" id="textname"/>
+		<input type="button" value="Dispaly name" id="btngetvalue"/>
+		<input type="button" value="Hide elements" id="hidevalue"/>
+		<input type="button" value="select elements" id="changecolor"/>		
+		
+		<p class="u1">This is my html document-1</p>
+		<p>This is my html document-2</p>
+		<p>This is my html document-3</p>
+		
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			
+		</ul>
+		
+		<a href="#">facebook</a>
+		<a>google</a>
+		<a target="_blank">twiter</a>
+		<a>yahoo</a>
+		
+		
+		<script>
+			$(document).ready(function(){
+			 $("#btngetvalue").click(function(){
+			 var name = $("#textname").val();
+			 alert(name);
+			 });
+			});
+
+			$(document).ready(function(){
+			$("#hidevalue").click(function(){
+			//$("p").hide();
+			//$("*").hide();
+			$("p.u1").hide();
+			$("ul li:first").css({ "color": "red" });
+			
+			
+			$("[href]").css({"color": "orange"});
+			$("a[target='_blank']").css({ "font-size": "20px" });
+			});
+			});
+			
+			//$(document).ready(function(){
+			//$("#changecolor").click(function(){
+			//$("ul li:first").css({ "color": "red" });
+			//});
+			//});
+			
+			
+		</script>
+
+		
+	</body>
+</html>
