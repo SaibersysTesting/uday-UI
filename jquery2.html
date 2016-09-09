@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<script src="jquery.min.js"></script>
+		<style>
+			#p1{
+				height:500px;
+				width:300px;
+				background-color:lightpink;
+				border:1px solid blue;
+			}
+		</style>
+	</head>
+	<body>
+	<input type="button" value="slide Up" id="slideup"/>
+	<input type="button" value="slide Down" id="slidedown"/>
+	<input type="button" value="slideToggle" id="slideToggle"/>
+	<input type="button" value="stop" id="stop"/>
+	<div id="p1">
+			Experience in Graphic and User Experience Design and Transforming Web/Graphic Designers static prototypes into hand-coded HTML, specifically emphasizing accuracy, efficiency & adhering to W3Cestablished web standards with respect to maintaining cross-browser/cross-platform compatibility and delivering final page templates, including optimized images.
+	</div>
+	<script>
+		$(document).ready(function(){
+			$("#slideup").click(function(){
+			$("#p1").slideUp(3000,succes);
+			});
+			});
+			function succes(){
+				alert("succes");
+			}
+			
+			
+			$(document).ready(function(){
+			$("#slidedown").click(function(){
+			$("#p1").slideDown(3000,succes);
+			});
+			});
+			function succes(){
+				alert("succes");
+			}
+			
+			$(document).ready(function(){
+			$("#slideToggle").click(function(){
+			$("#p1").slideToggle(3000,succes);
+			});
+			});
+			function succes(){
+				alert("succes");
+			}
+			
+			$(document).ready(function(){
+			$("#stop").click(function(){
+			$("#p1").stop(3000,succes);
+			});
+			});
+	</script>
+	</body>
+</html>

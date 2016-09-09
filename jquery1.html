@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<script src="jquery.min.js"></script>
+		<style>
+			#p1{
+				height:500px;
+				width:300px;
+				background-color:lightblue;
+				
+				border:1px solid blue;
+			}
+		</style>
+	</head>
+	<body>
+	<input type="button" value="fadeIn" id="btnfade"/>
+	<input type="button" value="fadeout" id="btnfadeout"/>
+	<input type="button" value="fadeToggle" id="btnfadetoggle"/>
+		<div id="p1">
+			Experience in Graphic and User Experience Design and Transforming Web/Graphic Designers static prototypes into hand-coded HTML, specifically emphasizing accuracy, efficiency & adhering to W3Cestablished web standards with respect to maintaining cross-browser/cross-platform compatibility and delivering final page templates, including optimized images.
+			<img src="B.tech batch 20150501_234713.jpg" alt="frnds" height="300px" width="300px"/>
+		</div>
+		<script>
+			//$("#p1").mouseenter(function(){
+			//$(this).css({ "background-color": "grey", "color": "blue" });
+			//});
+			//$("#p1").mouseleave(function(){
+			//$(this).css({ "background-color":"" });
+			//});
+			
+			/*$(document).ready(function(){
+			$("#btnfade").click(function(){
+			$("#p1").fadeIn(2000,succes);
+			});
+			});
+			function succes(){
+				alert("done");
+			}
+			
+			
+			$(document).ready(function(){
+			$("#btnfadeout").click(function(){
+			$("#p1").fadeOut(2000,succes);
+			});
+			});
+			function succes(){
+				alert("done");
+			}*/
+			$(document).ready(function(){
+			$("#btnfadetoggle").click(function(){
+			$("#p1").fadeToggle(2000,succes);
+			});
+			});
+			function succes(){
+				alert("done");
+			}
+		</script>
+	</body>
+</html>

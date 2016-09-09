@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<script src="jquery.min.js"></script>
+	</head>
+	<body>
+	<p id="p"></p>
+	<input type="text" id="textname" />
+	<p id="p1">This is my new project</p>
+	<input type="button" value="DOM" id="btndom"/>
+	<script>
+		$(document).ready(function(){
+		$("#btndom").click(function(){
+		//alert($("#p1").html());
+		//alert("hello..." + $("#textname").val());
+		//if ($("#textname").val() == ""){
+		//alert("please enter name");
+		//}
+		
+		//$("#p1").prepend("<b> Statment : </b>");
+		//$("#p1").append("<b> Statment : </b>");
+		//$("#p1").before("<b> Statment : </b>");
+		$("#p1").after("<b> Statment : </b>");
+	
+		});
+		});
+		//$("#p").html("this is my document");
+		
+	
+	</script>
+	</body>
+</html>

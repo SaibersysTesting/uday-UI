@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<script src="jquery.min.js"></script>
+		<style>
+			#p1{
+				height:500px;
+				width:300px;
+				background-color:lightgrey;
+				border:1px solid blue;
+				
+				
+			}
+		</style>
+	</head>
+	<body>
+	<!--<input type="button" value="Hide" id="btnhide"/>
+	<input type="button" value="show" id="btnshow"/>
+	<input type="button" value="Toggle" id="btntoggle"/>-->
+	<input type="button" value="chainning" id="btnchaining"/>
+	<input type="button" value="stop" id="btnstop"/>
+	<div id="p1">
+			Experience in Graphic and User Experience Design and Transforming Web/Graphic Designers static prototypes into hand-coded HTML, specifically emphasizing accuracy, 
+	</div>
+	<script>
+		/*$(document).ready(function(){
+		$("#btnhide").click(function(){
+		$("#p1").hide();
+		});
+		
+		$("#btnshow").click(function(){
+		$("#p1").show();
+		});
+		
+		$("#btntoggle").click(function(){
+		$("#p1").Toggle();
+		});
+		});*/
+		$(document).ready(function(){
+		$("#btnchaining").click(function(){
+		$("#p1").slideUp(3000,done);
+		});
+		)};
+		function done(){
+		 alert("chainning done");
+		}
+	</script>
+	</body>
+</html>
