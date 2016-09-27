@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="namesCtrl">
+
+<p>Looping with objects:</p>
+<ul>
+  <li ng-repeat="x in names | orderBy:'country'">
+    {{ x.name + ', ' + x.country }}
+  </li>
+</ul>
+
+</div>
+
+<script>
+angular.module('myApp', []).controller('namesCtrl', function($scope) {
+    $scope.names = [
+        {name:'Jani',country:'Hyd'},
+        {name:'Kumar',country:'Scd'},
+        {name:'Karan',country:'Island'},
+        {name:'Hari',country:'Norway'},
+        {name:'John',country:'Denmark'},
+        {name:'charan',country:'Delhi'},
+        {name:'Barghav',country:'Dargling'},
+        {name:'Mahi',country:'Mumbai'},
+        {name:'Kalli',country:'Karnataka'}
+        ];
+});
+</script>
+
+</body>
+</html>
+

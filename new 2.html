@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<p>HTTP protocals welcoms you:</p>
+
+<h1>{{myWelcome}}</h1>
+
+</div>
+
+<p>Hi this is uday I have around 7+ years of experence on web applications and mobile applications</p>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+  $http.get("welcome.htm")
+  .then(function(response) {
+      $scope.myWelcome = response.data;
+  });
+});
+</script>
+
+</body>
+</html>
