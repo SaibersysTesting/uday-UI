@@ -5,19 +5,21 @@
 
 <div ng-app="myApp" ng-controller="myCtrl">
 
-<h1>{{carname}}</h1>
+<ul>
+    <li ng-repeat="x in names">{{x}}</li>
+</ul>
 
 </div>
 
 <script>
 var app = angular.module('myApp', []);
+
 app.controller('myCtrl', function($scope) {
-    $scope.carname = "Benz";
+    $scope.names = ["uday", "kumar", "sai"];
 });
 </script>
 
-<p>The property "carname" was made in the controller, and can be referred to in the view by using the {{ }} brackets.</p>
+<p>The variable "x" has a different value for each repetition, proving that each repetition has its own scope.</p>
 
 </body>
 </html>
-
